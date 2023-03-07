@@ -1,5 +1,3 @@
-conda activate dnanexus-env
-
 dx login
 
 cd /your/working/directory/path/
