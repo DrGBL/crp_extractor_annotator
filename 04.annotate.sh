@@ -1,10 +1,15 @@
+# a few notes on vep
+# version 109 was used, with the merged refseq ensembl grch38 cache
+# loftee branch grch38 was used (with its files)
+# dbNSFP 4.3a for grch38 was used
+
 cd /your/working/directory/
 
 pathCache=/path/to/.vep/
 pathPlugin=/path/to/.vep/Plugins/
 pathdbNSFP=/path/to/dbNSFP4.3a/
 pathFasta=/path/to/Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz
-pathLoftee=/path/to/loftee/plugin/files/ #note that this is the loftee grch38 branch
+pathLoftee=/path/to/loftee/plugin/files/
 
 
 vep --input_file ukb_wes_all_crp_for_annot.vcf.gz \
