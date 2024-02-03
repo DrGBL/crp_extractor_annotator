@@ -4,8 +4,10 @@ cd /your/working/directory/path/
 
 mkdir -p joint_called_vcfs_wes
 
+name_of_project="your_dna_nexus_project_name"
+
 #path here may change on dna nexus, to adjust PRN
-dx generate_batch_inputs -ivcf_file='(.*).vcf.gz$' -iindex_file='(.*).vcf.gz.tbi$' --path 'HLA imputation:/Bulk/Exome sequences/Population level exome OQFE variants, pVCF format - final release/' -o 'joint_called_vcfs_wes/joint_called_vcfs_wes'
+dx generate_batch_inputs -ivcf_file='(.*).vcf.gz$' -iindex_file='(.*).vcf.gz.tbi$' --path '${name_of_project}:/Bulk/Exome sequences/Population level exome OQFE variants, pVCF format - final release/' -o 'joint_called_vcfs_wes/joint_called_vcfs_wes'
 
 ls joint_called_vcfs_wes > list_joint_called_vcfs_wes.txt
 
